@@ -1,9 +1,9 @@
 [package]
-name = "seq"
-version = "0.0.0"
 autotests = false
 edition = "2021"
+name = "seq"
 publish = false
+version = "0.0.0"
 
 [lib]
 proc-macro = true
@@ -16,4 +16,7 @@ path = "tests/progress.rs"
 trybuild = { version = "1.0.49", features = ["diff"] }
 
 [dependencies]
+proc-macro2 = "1.0.93"
+quote = "1.0.38"
+syn = { version = "2.0.98", features = ["full"] }
 # TODO
